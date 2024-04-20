@@ -1,0 +1,1010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{13EB7190-62F9-48DF-BB0B-E0B8E6D26CFC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManagingThePracticeOFTheProfession</RootNamespace>
+    <AssemblyName>ManagingThePracticeOFTheProfession</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\برنامج مزاولة المهنة 3-4-2023\User\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>43</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>6CC7C66472885326D63401DF1B1B55F1B25A76AA</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ManagingThePracticeOFTheProfession_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="clsHoorofArabic">
+      <HintPath>C:\Users\program\Documents\Visual Studio 2015\Projects\clsHoorofArabic\clsHoorofArabic\bin\Debug\clsHoorofArabic.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Win32Interop.Dwmapi, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Dwmapi.1.0.1\lib\Win32Interop.Dwmapi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Win32Interop.Gdi32, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Gdi32.1.0.1\lib\Win32Interop.Gdi32.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Win32Interop.Kernel32, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Kernel32.1.0.1\lib\Win32Interop.Kernel32.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Win32Interop.User32, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.User32.1.0.1\lib\Win32Interop.User32.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Win32Interop.Uxtheme, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Win32Interop.Uxtheme.1.0.1\lib\Win32Interop.Uxtheme.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAL\ClassDAL.cs" />
+    <Compile Include="DAL\Clss_Owners.cs" />
+    <Compile Include="DAL\Cls_AllowedNumber.cs" />
+    <Compile Include="DAL\Cls_BusinessValue.cs" />
+    <Compile Include="DAL\Cls_Cancel.cs" />
+    <Compile Include="DAL\Cls_ConsultingOffice.cs" />
+    <Compile Include="DAL\Cls_Employee.cs" />
+    <Compile Include="DAL\Cls_EngineersData.cs" />
+    <Compile Include="DAL\Cls_ExperienceHouse.cs" />
+    <Compile Include="DAL\Cls_Gallery.cs" />
+    <Compile Include="DAL\Cls_OfficeData.cs" />
+    <Compile Include="DAL\Cls_OrderPaied.cs" />
+    <Compile Include="DAL\Cls_PrintForms.cs" />
+    <Compile Include="DAL\Cls_SH_A.cs" />
+    <Compile Include="DAL\Cls_SH_B.cs" />
+    <Compile Include="DAL\Cls_SH_B2.cs" />
+    <Compile Include="DAL\Cls_SH_D.cs" />
+    <Compile Include="DAL\Cls_SH_D2.cs" />
+    <Compile Include="DAL\Cls_SH_G.cs" />
+    <Compile Include="DAL\Cls_SH_G2.cs" />
+    <Compile Include="DAL\Cls_SH_H.cs" />
+    <Compile Include="DAL\Cls_SH_W.cs" />
+    <Compile Include="DAL\Cls_TechnicalReportCivilProtection.cs" />
+    <Compile Include="DataSet\DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_Pragraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_Pragraph.Designer.cs">
+      <DependentUpon>Frm_Pragraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_PrintForm.Designer.cs">
+      <DependentUpon>Frm_PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_Restore.Designer.cs">
+      <DependentUpon>Frm_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_A.Designer.cs">
+      <DependentUpon>Frm_SH_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_B.Designer.cs">
+      <DependentUpon>Frm_SH_B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_B2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_B2.Designer.cs">
+      <DependentUpon>Frm_SH_B2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_D.Designer.cs">
+      <DependentUpon>Frm_SH_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_D2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_D2.Designer.cs">
+      <DependentUpon>Frm_SH_D2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_G.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_G.Designer.cs">
+      <DependentUpon>Frm_SH_G.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_G2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_G2.Designer.cs">
+      <DependentUpon>Frm_SH_G2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_H.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_H.Designer.cs">
+      <DependentUpon>Frm_SH_H.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_W.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Forms\Frm_SH_W.Designer.cs">
+      <DependentUpon>Frm_SH_W.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_DailyBusiness.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_DailyBusiness.Designer.cs">
+      <DependentUpon>Frm_DailyBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\OrderPaied.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\OrderPaied.Designer.cs">
+      <DependentUpon>OrderPaied.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\FrmEngData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmEngData.Designer.cs">
+      <DependentUpon>FrmEngData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_AllowedNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_AllowedNumbers.Designer.cs">
+      <DependentUpon>Frm_AllowedNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_BackUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_BackUp.Designer.cs">
+      <DependentUpon>Frm_BackUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_BusinessStatementEng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_BusinessStatementEng.Designer.cs">
+      <DependentUpon>Frm_BusinessStatementEng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_CanceledForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_CanceledForm.Designer.cs">
+      <DependentUpon>Frm_CanceledForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_ConsultingOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_ConsultingOffice.Designer.cs">
+      <DependentUpon>Frm_ConsultingOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_DocumentEng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_DocumentEng.Designer.cs">
+      <DependentUpon>Frm_DocumentEng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Employees.Designer.cs">
+      <DependentUpon>Frm_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_EngData2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_EngData2.Designer.cs">
+      <DependentUpon>Frm_EngData2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_EngineeringRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_EngineeringRecord.Designer.cs">
+      <DependentUpon>Frm_EngineeringRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_ExperienceHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_ExperienceHouse.Designer.cs">
+      <DependentUpon>Frm_ExperienceHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Gallery.Designer.cs">
+      <DependentUpon>Frm_Gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Main.Designer.cs">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Main2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Main2.Designer.cs">
+      <DependentUpon>Frm_Main2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_MessageSuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_MessageSuccess.Designer.cs">
+      <DependentUpon>Frm_MessageSuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_OfficeData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_OfficeData.Designer.cs">
+      <DependentUpon>Frm_OfficeData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Owners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Owners.Designer.cs">
+      <DependentUpon>Frm_Owners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_PowerOfUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_PowerOfUsers.Designer.cs">
+      <DependentUpon>Frm_PowerOfUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_PowerOfUserSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_PowerOfUserSearch.Designer.cs">
+      <DependentUpon>Frm_PowerOfUserSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_PrintCanceldForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_PrintCanceldForm.Designer.cs">
+      <DependentUpon>Frm_PrintCanceldForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_progarssBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_progarssBar.Designer.cs">
+      <DependentUpon>Frm_progarssBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_ResionDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_ResionDelete.Designer.cs">
+      <DependentUpon>Frm_ResionDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_SearchEngData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_SearchEngData.Designer.cs">
+      <DependentUpon>Frm_SearchEngData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_SearchFormToEditORDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_SearchFormToEditORDelete.Designer.cs">
+      <DependentUpon>Frm_SearchFormToEditORDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_SearchOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_SearchOffice.Designer.cs">
+      <DependentUpon>Frm_SearchOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_SearshOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_SearshOwners.Designer.cs">
+      <DependentUpon>Frm_SearshOwners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_SettingBusinessValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_SettingBusinessValue.Designer.cs">
+      <DependentUpon>Frm_SettingBusinessValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_TechnicalReportCivilProtection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_TechnicalReportCivilProtection.Designer.cs">
+      <DependentUpon>Frm_TechnicalReportCivilProtection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\CryDailyBusines3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryDailyBusines3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CryDailyBusiness.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryDailyBusiness.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CryDailyBusiness2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryDailyBusiness2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CryDailyBusinessStope.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryDailyBusinessStope.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CryForms.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryForms.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\CryReportProdaction.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryReportProdaction.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryBusinessStatement2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryBusinessStatement2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryConsultingOffice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryConsultingOffice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryContactEng.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryContactEng.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngActiveSHW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngActiveSHW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngBassinesStatement.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngBassinesStatement.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHBActive.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHBActive.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHBActive2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHBActive2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHBStop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHBStop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHBStop2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHBStop2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHDActive.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHDActive.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHDActive2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHDActive2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHDStop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHDStop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHDStop2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHDStop2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHGActive.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHGActive.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHGActive2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHGActive2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHGStop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHGStop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHGStop2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHGStop2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHHActive.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHHActive.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngSHHStop.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngSHHStop.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryEngStopSHW.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryEngStopSHW.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryOfficeEngData.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryOfficeEngData.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Eng\CryTechnicalReportCivilProtection.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryTechnicalReportCivilProtection.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_SH_D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Frm_SH_D.Designer.cs">
+      <DependentUpon>Frm_SH_D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Print\CryCancelSH_DCustom.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryCancelSH_DCustom.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Print\CryOrderCanceld.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryOrderCanceld.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Print\CryOrderPayed.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryOrderPayed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Print\CryTechnicalReportCivilProtection.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CryTechnicalReportCivilProtection.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SH\CrySH_B.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrySH_B.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SH\CrySH_D.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrySH_D.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SH\CrySH_G.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrySH_G.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SH\CrySH_H.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrySH_H.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SH\CrySH_W.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrySH_W.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_Pragraph.resx">
+      <DependentUpon>Frm_Pragraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_PrintForm.resx">
+      <DependentUpon>Frm_PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_Restore.resx">
+      <DependentUpon>Frm_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_A.resx">
+      <DependentUpon>Frm_SH_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_B.resx">
+      <DependentUpon>Frm_SH_B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_B2.resx">
+      <DependentUpon>Frm_SH_B2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_D.resx">
+      <DependentUpon>Frm_SH_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_D2.resx">
+      <DependentUpon>Frm_SH_D2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_G.resx">
+      <DependentUpon>Frm_SH_G.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_G2.resx">
+      <DependentUpon>Frm_SH_G2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_H.resx">
+      <DependentUpon>Frm_SH_H.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Forms\Frm_SH_W.resx">
+      <DependentUpon>Frm_SH_W.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_DailyBusiness.resx">
+      <DependentUpon>Frm_DailyBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\OrderPaied.resx">
+      <DependentUpon>OrderPaied.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmEngData.resx">
+      <DependentUpon>FrmEngData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_AllowedNumbers.resx">
+      <DependentUpon>Frm_AllowedNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_BackUp.resx">
+      <DependentUpon>Frm_BackUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_BusinessStatementEng.resx">
+      <DependentUpon>Frm_BusinessStatementEng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_CanceledForm.resx">
+      <DependentUpon>Frm_CanceledForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_ConsultingOffice.resx">
+      <DependentUpon>Frm_ConsultingOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_DocumentEng.resx">
+      <DependentUpon>Frm_DocumentEng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Employees.resx">
+      <DependentUpon>Frm_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_EngData2.resx">
+      <DependentUpon>Frm_EngData2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_EngineeringRecord.resx">
+      <DependentUpon>Frm_EngineeringRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_ExperienceHouse.resx">
+      <DependentUpon>Frm_ExperienceHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Gallery.resx">
+      <DependentUpon>Frm_Gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Main.resx">
+      <DependentUpon>Frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Main2.resx">
+      <DependentUpon>Frm_Main2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_MessageSuccess.resx">
+      <DependentUpon>Frm_MessageSuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_OfficeData.resx">
+      <DependentUpon>Frm_OfficeData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Owners.resx">
+      <DependentUpon>Frm_Owners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_PowerOfUsers.resx">
+      <DependentUpon>Frm_PowerOfUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_PowerOfUserSearch.resx">
+      <DependentUpon>Frm_PowerOfUserSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_PrintCanceldForm.resx">
+      <DependentUpon>Frm_PrintCanceldForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_progarssBar.resx">
+      <DependentUpon>Frm_progarssBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_ResionDelete.resx">
+      <DependentUpon>Frm_ResionDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_SearchEngData.resx">
+      <DependentUpon>Frm_SearchEngData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_SearchFormToEditORDelete.resx">
+      <DependentUpon>Frm_SearchFormToEditORDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_SearchOffice.resx">
+      <DependentUpon>Frm_SearchOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_SearshOwners.resx">
+      <DependentUpon>Frm_SearshOwners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_SettingBusinessValue.resx">
+      <DependentUpon>Frm_SettingBusinessValue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_TechnicalReportCivilProtection.resx">
+      <DependentUpon>Frm_TechnicalReportCivilProtection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\CryDailyBusines3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryDailyBusines3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CryDailyBusiness.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryDailyBusiness.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CryDailyBusiness2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryDailyBusiness2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CryDailyBusinessStope.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryDailyBusinessStope.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CryForms.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryForms.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\CryReportProdaction.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryReportProdaction.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryBusinessStatement2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryBusinessStatement2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryConsultingOffice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryConsultingOffice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryContactEng.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryContactEng.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngActiveSHW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngActiveSHW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngBassinesStatement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngBassinesStatement.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHBActive.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHBActive.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHBActive2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHBActive2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHBStop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHBStop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHBStop2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHBStop2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHDActive.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHDActive.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHDActive2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHDActive2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHDStop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHDStop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHDStop2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHDStop2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHGActive.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHGActive.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHGActive2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHGActive2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHGStop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHGStop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHGStop2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHGStop2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHHActive.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHHActive.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngSHHStop.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngSHHStop.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryEngStopSHW.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryEngStopSHW.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryOfficeEngData.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryOfficeEngData.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Eng\CryTechnicalReportCivilProtection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryTechnicalReportCivilProtection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Frm_SH_D.resx">
+      <DependentUpon>Frm_SH_D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Print\CryCancelSH_DCustom.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryCancelSH_DCustom.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Print\CryOrderCanceld.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryOrderCanceld.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Print\CryOrderPayed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryOrderPayed.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Print\CryTechnicalReportCivilProtection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CryTechnicalReportCivilProtection.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SH\CrySH_B.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrySH_B.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SH\CrySH_D.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrySH_D.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SH\CrySH_G.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrySH_G.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SH\CrySH_H.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrySH_H.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SH\CrySH_W.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrySH_W.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSet\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ManagingThePracticeOFTheProfession_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MetroFramework.txt" />
+    <None Include="Resources\Loading.gif" />
+    <Content Include="Resources\Lock.png" />
+    <None Include="Resources\mimize.png" />
+    <None Include="Resources\maximize.png" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\deleteIcon.png" />
+    <None Include="Resources\newFile.png" />
+    <None Include="Resources\file.png" />
+    <None Include="Resources\Package-add-icon.png" />
+    <None Include="Resources\asi.jpg" />
+    <None Include="Resources\125656_print_512x512.png" />
+    <None Include="Resources\20-512.png" />
+    <None Include="Resources\1-512.png" />
+    <None Include="Resources\Correct.png" />
+    <None Include="Resources\noimage-placeholderpng.png" />
+    <None Include="Resources\engicon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reports\Eng2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
