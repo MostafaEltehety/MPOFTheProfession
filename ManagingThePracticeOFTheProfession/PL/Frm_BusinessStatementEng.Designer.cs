@@ -35,6 +35,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
+            this.btnPublicData = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -105,6 +106,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnPublicData);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.button1);
@@ -129,6 +131,21 @@
             this.crystalReportViewer1.Size = new System.Drawing.Size(786, 462);
             this.crystalReportViewer1.TabIndex = 6;
             this.crystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None;
+            // 
+            // btnPublicData
+            // 
+            this.btnPublicData.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnPublicData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(101)))), ((int)(((byte)(192)))));
+            this.btnPublicData.FlatAppearance.BorderSize = 0;
+            this.btnPublicData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPublicData.ForeColor = System.Drawing.Color.White;
+            this.btnPublicData.Location = new System.Drawing.Point(26, 28);
+            this.btnPublicData.Name = "btnPublicData";
+            this.btnPublicData.Size = new System.Drawing.Size(90, 31);
+            this.btnPublicData.TabIndex = 5;
+            this.btnPublicData.Text = "بيان عام";
+            this.btnPublicData.UseVisualStyleBackColor = false;
+            this.btnPublicData.Click += new System.EventHandler(this.btnPublicData_Click);
             // 
             // Frm_BusinessStatementEng
             // 
@@ -159,5 +176,6 @@
         public System.Windows.Forms.Label lbl_IDEng;
         private System.Windows.Forms.GroupBox groupBox1;
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
+        private System.Windows.Forms.Button btnPublicData;
     }
 }

@@ -551,5 +551,28 @@ namespace ManagingThePracticeOFTheProfession.DAL
             dt = Select("select EngineeringRecordNo from  EngBasicData_Tbl where RegistrationNo='" + registrationNo + "'");
             return dt.Rows[0][0].ToString();
         }
+
+
+
+
+        public static DataTable PublicEngData()
+        {
+            try
+            {
+                DataTable dtData = new DataTable();
+                dtData = Select("SELECT   dbo.EngBasicData_Tbl.IDEng, dbo.EngBasicData_Tbl.EngName,dbo.EngBasicData_Tbl.RegistrationNo, dbo.EngBasicData_Tbl.Division,dbo.EngBasicData_Tbl.EngineeringRecordNo, dbo.EngBasicData_Tbl.ConsultantNo, dbo.Contact_Tbl.Address, dbo.Contact_Tbl.Phone, dbo.Contact_Tbl.Mobile FROM dbo.EngBasicData_Tbl INNER JOIN dbo.Contact_Tbl ON dbo.EngBasicData_Tbl.IDEng = dbo.Contact_Tbl.IDEng");
+                return dtData;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                DataTable dtData = new DataTable();
+                return dtData;
+            }
+        }
+
+
+
+
     }
 }

@@ -339,6 +339,23 @@ namespace ManagingThePracticeOFTheProfession.PL
 
         }
 
+        private void btnPublicData_Click(object sender, EventArgs e)
+        {
+            PL.Frm_progarssBar prog = new Frm_progarssBar();
+            groupBox1.Enabled = false;
+            prog.Show();
 
+            DataTable dt = DAL.Cls_EngineersData.PublicEngData();
+
+            Reports.Eng.CryEngineersData cry = new Reports.Eng.CryEngineersData();
+            cry.SetDataSource(dt);
+            crystalReportViewer1.Visible = true;
+            crystalReportViewer1.ReportSource = cry;
+
+
+            prog.timer1.Stop();
+            prog.Close();
+            groupBox1.Enabled = true;
+        }
     }
 }
