@@ -15,11 +15,16 @@ namespace ManagingThePracticeOFTheProfession.DAL
     {
         //public static SqlConnection con = new SqlConnection(@"Server=.\SQLExpress; database = ManagingThePracticeOFTheProfession; user id =sayed ;  password =123;"); // PC2
 
-        public static SqlConnection con = new SqlConnection(@"Server=.; database = ManagingThePracticeOFTheProfession; Integrated Security=true;");
+        //public static SqlConnection con = new SqlConnection(@"Server=.; database = ManagingThePracticeOFTheProfession; Integrated Security=true;");
 
         //public static SqlConnection con = new SqlConnection(@"Server=PC1\SQLExpress,1433; database = ManagingThePracticeOFTheProfession; user id =PC1 ;  password =123;"); // PC2
-        //public static SqlConnection con = new SqlConnection(@"Server=sayed\SQLExpress,1433; database = ManagingThePracticeOFTheProfession; user id =PC1 ;  password =123;"); // PC2 
+        public static SqlConnection con = new SqlConnection(@"Server=sayed\SQLExpress,1433; database = ManagingThePracticeOFTheProfession; user id =PC1 ;  password =123;"); // PC2
+
         //public static SqlConnection con = new SqlConnection(@"Server=sayed\SQLExpress; database = ManagingThePracticeOFTheProfession; user id =PC1 ;  password =123;"); // PC1 
+
+
+
+        //public static SqlConnection con = new SqlConnection(@"Server=.\SQLExpress; database = ManagingThePracticeOFTheProfession; user id =PC1 ;  password =123;"); // PC1 
         //public static SqlConnection con = new SqlConnection(@"Server=.\SQLExpress; database = ManagingThePracticeOFTheProfession; user id =PC1 ;  password =123;"); // server
 
         public static SqlCommand cmd = new SqlCommand("", con);

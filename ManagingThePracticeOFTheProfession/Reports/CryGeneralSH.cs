@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ManagingThePracticeOFTheProfession.Reports.SH {
+namespace ManagingThePracticeOFTheProfession.Reports {
     using System;
     using System.ComponentModel;
     using CrystalDecisions.Shared;
@@ -16,14 +16,14 @@ namespace ManagingThePracticeOFTheProfession.Reports.SH {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class CrySH_W : ReportClass {
+    public class CryGeneralSH : ReportClass {
         
-        public CrySH_W() {
+        public CryGeneralSH() {
         }
         
         public override string ResourceName {
             get {
-                return "CrySH_W.rpt";
+                return "CryGeneralSH.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace ManagingThePracticeOFTheProfession.Reports.SH {
         
         public override string FullResourceName {
             get {
-                return "ManagingThePracticeOFTheProfession.Reports.SH.CrySH_W.rpt";
+                return "ManagingThePracticeOFTheProfession.Reports.CryGeneralSH.rpt";
             }
             set {
                 // Do nothing
@@ -90,7 +90,7 @@ namespace ManagingThePracticeOFTheProfession.Reports.SH {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_IDForm {
+        public CrystalDecisions.Shared.IParameterField Parameter_TypeSH {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -98,17 +98,25 @@ namespace ManagingThePracticeOFTheProfession.Reports.SH {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_goto {
+        public CrystalDecisions.Shared.IParameterField Parameter_FromDate {
             get {
                 return this.DataDefinition.ParameterFields[1];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_ToDate {
+            get {
+                return this.DataDefinition.ParameterFields[2];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedCrySH_W : Component, ICachedReport {
+    public class CachedCryGeneralSH : Component, ICachedReport {
         
-        public CachedCrySH_W() {
+        public CachedCryGeneralSH() {
         }
         
         [Browsable(false)]
@@ -145,7 +153,7 @@ namespace ManagingThePracticeOFTheProfession.Reports.SH {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            CrySH_W rpt = new CrySH_W();
+            CryGeneralSH rpt = new CryGeneralSH();
             rpt.Site = this.Site;
             return rpt;
         }

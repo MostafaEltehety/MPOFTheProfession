@@ -805,6 +805,20 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="dt_GeneralSH" msprop:Generator_TableClassName="dt_GeneralSHDataTable" msprop:Generator_TableVarName="tabledt_GeneralSH" msprop:Generator_RowChangedName="dt_GeneralSHRowChanged" msprop:Generator_TablePropName="dt_GeneralSH" msprop:Generator_RowDeletingName="dt_GeneralSHRowDeleting" msprop:Generator_RowChangingName="dt_GeneralSHRowChanging" msprop:Generator_RowEvHandlerName="dt_GeneralSHRowChangeEventHandler" msprop:Generator_RowDeletedName="dt_GeneralSHRowDeleted" msprop:Generator_RowClassName="dt_GeneralSHRow" msprop:Generator_UserTableName="dt_GeneralSH" msprop:Generator_RowEvArgName="dt_GeneralSHRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EngName" msprop:Generator_ColumnVarNameInTable="columnEngName" msprop:Generator_ColumnPropNameInRow="EngName" msprop:Generator_ColumnPropNameInTable="EngNameColumn" msprop:Generator_UserColumnName="EngName" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_UserColumnName="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="SerailNumber" msprop:Generator_ColumnVarNameInTable="columnSerailNumber" msprop:Generator_ColumnPropNameInRow="SerailNumber" msprop:Generator_ColumnPropNameInTable="SerailNumberColumn" msprop:Generator_UserColumnName="SerailNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="DateForm" msprop:Generator_ColumnVarNameInTable="columnDateForm" msprop:Generator_ColumnPropNameInRow="DateForm" msprop:Generator_ColumnPropNameInTable="DateFormColumn" msprop:Generator_UserColumnName="DateForm" type="xs:string" minOccurs="0" />
+              <xs:element name="NumberLicense" msprop:Generator_ColumnVarNameInTable="columnNumberLicense" msprop:Generator_ColumnPropNameInRow="NumberLicense" msprop:Generator_ColumnPropNameInTable="NumberLicenseColumn" msprop:Generator_UserColumnName="NumberLicense" type="xs:string" minOccurs="0" />
+              <xs:element name="YearLicense" msprop:Generator_ColumnVarNameInTable="columnYearLicense" msprop:Generator_ColumnPropNameInRow="YearLicense" msprop:Generator_ColumnPropNameInTable="YearLicenseColumn" msprop:Generator_UserColumnName="YearLicense" type="xs:string" minOccurs="0" />
+              <xs:element name="IssuedFrom" msprop:Generator_ColumnVarNameInTable="columnIssuedFrom" msprop:Generator_ColumnPropNameInRow="IssuedFrom" msprop:Generator_ColumnPropNameInTable="IssuedFromColumn" msprop:Generator_UserColumnName="IssuedFrom" type="xs:string" minOccurs="0" />
+              <xs:element name="number" msprop:Generator_ColumnVarNameInTable="columnnumber" msprop:Generator_ColumnPropNameInRow="number" msprop:Generator_ColumnPropNameInTable="numberColumn" msprop:Generator_UserColumnName="number" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
   </xs:element>

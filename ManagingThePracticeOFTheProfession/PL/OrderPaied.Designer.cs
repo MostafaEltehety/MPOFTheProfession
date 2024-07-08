@@ -259,7 +259,7 @@
             this.groupData.Location = new System.Drawing.Point(15, 135);
             this.groupData.Name = "groupData";
             this.groupData.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupData.Size = new System.Drawing.Size(819, 103);
+            this.groupData.Size = new System.Drawing.Size(901, 103);
             this.groupData.TabIndex = 190;
             this.groupData.TabStop = false;
             this.groupData.Text = "ملخص اعمال الشهادات";
@@ -357,7 +357,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(6, 37);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(820, 93);
+            this.groupBox1.Size = new System.Drawing.Size(910, 93);
             this.groupBox1.TabIndex = 191;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "بحث ";
@@ -415,7 +415,7 @@
             this.groupOwners.Location = new System.Drawing.Point(12, 257);
             this.groupOwners.Name = "groupOwners";
             this.groupOwners.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupOwners.Size = new System.Drawing.Size(814, 196);
+            this.groupOwners.Size = new System.Drawing.Size(780, 196);
             this.groupOwners.TabIndex = 192;
             this.groupOwners.TabStop = false;
             this.groupOwners.Text = "بيانات المالك ";
@@ -579,7 +579,7 @@
             this.groupDataForm.Controls.Add(this.label15);
             this.groupDataForm.Location = new System.Drawing.Point(12, 459);
             this.groupDataForm.Name = "groupDataForm";
-            this.groupDataForm.Size = new System.Drawing.Size(797, 234);
+            this.groupDataForm.Size = new System.Drawing.Size(763, 234);
             this.groupDataForm.TabIndex = 193;
             this.groupDataForm.TabStop = false;
             this.groupDataForm.Text = "بيانات الشهادة";
@@ -718,7 +718,7 @@
             this.GroupPayed.Location = new System.Drawing.Point(12, 699);
             this.GroupPayed.Name = "GroupPayed";
             this.GroupPayed.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.GroupPayed.Size = new System.Drawing.Size(797, 267);
+            this.GroupPayed.Size = new System.Drawing.Size(890, 267);
             this.GroupPayed.TabIndex = 194;
             this.GroupPayed.TabStop = false;
             this.GroupPayed.Text = "إذن التوريد";
@@ -957,7 +957,7 @@
             this.groupBox2.Controls.Add(this.btn_New);
             this.groupBox2.Location = new System.Drawing.Point(15, 959);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(777, 81);
+            this.groupBox2.Size = new System.Drawing.Size(901, 81);
             this.groupBox2.TabIndex = 196;
             this.groupBox2.TabStop = false;
             // 
@@ -978,7 +978,7 @@
             this.groupOfficeCon.Location = new System.Drawing.Point(12, 136);
             this.groupOfficeCon.Name = "groupOfficeCon";
             this.groupOfficeCon.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.groupOfficeCon.Size = new System.Drawing.Size(814, 122);
+            this.groupOfficeCon.Size = new System.Drawing.Size(780, 122);
             this.groupOfficeCon.TabIndex = 197;
             this.groupOfficeCon.TabStop = false;
             this.groupOfficeCon.Text = "ملخص اعمال الشهادات";
@@ -1096,7 +1096,7 @@
             this.groupCanceled.Controls.Add(this.groupBox4);
             this.groupCanceled.Location = new System.Drawing.Point(6, 135);
             this.groupCanceled.Name = "groupCanceled";
-            this.groupCanceled.Size = new System.Drawing.Size(820, 673);
+            this.groupCanceled.Size = new System.Drawing.Size(910, 673);
             this.groupCanceled.TabIndex = 192;
             this.groupCanceled.TabStop = false;
             // 
@@ -1133,7 +1133,7 @@
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Location = new System.Drawing.Point(17, 173);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1222, 652);
+            this.groupBox3.Size = new System.Drawing.Size(1312, 652);
             this.groupBox3.TabIndex = 55;
             this.groupBox3.TabStop = false;
             // 
@@ -1421,7 +1421,7 @@
             this.groupBox4.Controls.Add(this.label34);
             this.groupBox4.Location = new System.Drawing.Point(22, 40);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(764, 117);
+            this.groupBox4.Size = new System.Drawing.Size(854, 117);
             this.groupBox4.TabIndex = 54;
             this.groupBox4.TabStop = false;
             // 

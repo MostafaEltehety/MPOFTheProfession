@@ -144,9 +144,9 @@ namespace ManagingThePracticeOFTheProfession.DAL
 
 
                 // Insert into Revenue
-                if (OrderPaied==139)
+                if (OrderPaied==214)
                 {
-                    cmd = new SqlCommand("insert into Revenue_Tbl (Area,BisnecesCostArea,StampEng,StampPrevPaied,OrderPaied,SerailNumber,Fess,box,tax,OrderWord) values ('0','0','0','0','139','" + SerialNumber + "','100','25','14','فقط مائة وتسعة وثلاثون جنيهاً لاغير')", con, transaction);
+                    cmd = new SqlCommand("insert into Revenue_Tbl (Area,BisnecesCostArea,StampEng,StampPrevPaied,OrderPaied,SerailNumber,Fess,box,tax,OrderWord) values ('0','0','0','0','214','" + SerialNumber + "','100','100','14','فقط مائتان واربعة عشر جنيهاً لاغير')", con, transaction);
                     cmd.ExecuteNonQuery();
                 }
                 else

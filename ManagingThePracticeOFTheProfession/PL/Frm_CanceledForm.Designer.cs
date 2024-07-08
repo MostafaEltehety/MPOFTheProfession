@@ -228,7 +228,7 @@
             this.txt_Rev.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txt_Rev.FormattingEnabled = true;
             this.txt_Rev.Items.AddRange(new object[] {
-            "139",
+            "214",
             "50"});
             this.txt_Rev.Location = new System.Drawing.Point(568, 433);
             this.txt_Rev.Name = "txt_Rev";

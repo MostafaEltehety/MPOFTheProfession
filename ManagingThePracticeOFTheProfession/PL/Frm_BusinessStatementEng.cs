@@ -357,5 +357,11 @@ namespace ManagingThePracticeOFTheProfession.PL
             prog.Close();
             groupBox1.Enabled = true;
         }
+
+        private void btn_Click(object sender, EventArgs e)
+        {
+            Frm_GenralCertificates frm = new Frm_GenralCertificates();
+            frm.ShowDialog();
+        }
     }
 }

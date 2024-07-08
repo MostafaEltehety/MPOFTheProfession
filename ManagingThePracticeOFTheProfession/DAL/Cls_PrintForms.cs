@@ -31,7 +31,8 @@ namespace ManagingThePracticeOFTheProfession.DAL
             try
             {
                 cmbox.DataSource = null;
-                dt = Select("SELECT IDCertificate, Certificate FROM  dbo.Certificate_Tbl");
+                dt = Select("SELECT IDCertificate, Certificate FROM  dbo.Certificate_Tbl  where IDCertificate!=1");
+                 
                 cmbox.DisplayMember = dt.Columns["Certificate"].ToString();
                 cmbox.ValueMember = dt.Columns["IDCertificate"].ToString();
                 cmbox.DataSource = dt;
@@ -45,8 +46,28 @@ namespace ManagingThePracticeOFTheProfession.DAL
             }
         }
 
+        public static ComboBox FillComb(ComboBox cmbox,int cancel)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                cmbox.DataSource = null;
+                dt = Select("SELECT IDCertificate, Certificate FROM  dbo.Certificate_Tbl  where IDCertificate!=1 and IDCertificate!=7");
 
-         public static void SaveImgForm(byte[] imgForm, int IDCertificate)
+                cmbox.DisplayMember = dt.Columns["Certificate"].ToString();
+                cmbox.ValueMember = dt.Columns["IDCertificate"].ToString();
+                cmbox.DataSource = dt;
+
+                return cmbox;
+            }
+            catch (Exception ex)
+            {
+                cmbox.DataSource = null;
+                return cmbox;
+            }
+        }
+
+        public static void SaveImgForm(byte[] imgForm, int IDCertificate)
         {
             cmd = new SqlCommand("update Certificate_Tbl set imgForm= @imgForm where IDCertificate=@IDCertificate", con);
             SqlParameter[] p = new SqlParameter[2];
